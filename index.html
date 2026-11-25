@@ -3,326 +3,1177 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta
+            name="description"
+            content="Resume of Robert Gherlan — Senior Software Engineer, Data Engineer, and Software Architect with 11+ years of experience on Google Cloud, AWS, and Azure."
+        />
+        <meta name="author" content="Robert Gherlan" />
+        <meta property="og:title" content="Robert Gherlan - Resume" />
+        <meta
+            property="og:description"
+            content="Senior Software Engineer · Data Engineer · Software Architect with 11+ years of experience in software engineering, data engineering, and cloud architecture."
+        />
+        <meta property="og:type" content="website" />
         <title>Robert Gherlan - Resume</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .contact-meta {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.4rem 1.25rem;
+                font-size: 0.95rem;
+                color: #495057;
+            }
+            .contact-meta a {
+                text-decoration: none;
+            }
+            .contact-meta a:hover {
+                text-decoration: underline;
+            }
+            .contact-meta i,
+            .contact-meta svg {
+                color: var(--bs-primary);
+                margin-right: 0.35rem;
+            }
+            .summary-highlights {
+                list-style: none;
+                padding-left: 0;
+            }
+            .summary-highlights li {
+                position: relative;
+                padding-left: 1.35rem;
+                margin-bottom: 0.6rem;
+                line-height: 1.6;
+            }
+            .summary-highlights li::before {
+                content: "•";
+                position: absolute;
+                left: 0.25rem;
+                color: var(--bs-primary);
+                font-weight: 800;
+            }
+            .role-entry {
+                padding-bottom: 2.5rem;
+                margin-bottom: 2.5rem;
+                border-bottom: 1px solid #e9ecef;
+            }
+            .role-entry:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0;
+            }
+            .role-meta {
+                min-width: 11.5rem;
+            }
+            .role-location {
+                font-size: 0.9rem;
+                color: #6c757d;
+            }
+            .project-block {
+                border-left: 3px solid rgba(189, 93, 56, 0.35);
+                padding-left: 1.15rem;
+                margin-top: 1.35rem;
+            }
+            .project-title {
+                font-family: var(--bs-body-font-family);
+                text-transform: none;
+                font-size: 1.05rem;
+                font-weight: 800;
+                color: #343a40;
+                margin-bottom: 0.5rem;
+            }
+            .project-list {
+                padding-left: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+            .project-list li {
+                margin-bottom: 0.4rem;
+                line-height: 1.55;
+            }
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.35rem;
+                margin-top: 0.5rem;
+            }
+            .tech-stack-label {
+                font-size: 0.8rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #495057;
+                margin-right: 0.25rem;
+            }
+            .tech-badge {
+                display: inline-block;
+                padding: 0.2rem 0.55rem;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: #495057;
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+            }
+            .skill-category {
+                margin-bottom: 1.5rem;
+            }
+            .skill-category:last-child {
+                margin-bottom: 0;
+            }
+            .skill-category-title {
+                font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.35rem;
+                color: #343a40;
+                margin-bottom: 0.5rem;
+            }
+            .cert-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .cert-item {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                gap: 0.4rem 0.75rem;
+                padding: 0.6rem 0;
+                border-bottom: 1px solid #f1f3f5;
+            }
+            .cert-item:last-child {
+                border-bottom: 0;
+            }
+            .cert-year {
+                display: inline-block;
+                min-width: 3.1rem;
+                text-align: center;
+                padding: 0.15rem 0.45rem;
+                font-size: 0.8rem;
+                font-weight: 700;
+                color: #fff;
+                background-color: var(--bs-primary);
+                border-radius: 0.25rem;
+            }
+            .cert-issuer {
+                font-weight: 800;
+                color: #343a40;
+                min-width: 5.75rem;
+            }
+            .cert-link {
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .cert-link:hover {
+                text-decoration: underline;
+            }
+            .cert-link .fa-arrow-up-right-from-square {
+                font-size: 0.75em;
+                margin-left: 0.3rem;
+                opacity: 0.75;
+            }
+            .edu-details {
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            .edu-details li {
+                margin-bottom: 0.3rem;
+                line-height: 1.55;
+            }
+            .edu-details strong {
+                color: #343a40;
+            }
+            .presentation-subtitle {
+                font-size: 1.25rem;
+                line-height: 1.35;
+            }
+            .action-row {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 1.25rem;
+            }
+            .btn-print-resume {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.55rem 1.1rem;
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: var(--bs-primary);
+                background-color: transparent;
+                border: 2px solid var(--bs-primary);
+                border-radius: 50rem;
+                cursor: pointer;
+                transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+            }
+            .btn-print-resume:hover {
+                background-color: var(--bs-primary);
+                color: #fff;
+            }
+            @media print {
+                #sideNav,
+                .no-print {
+                    display: none !important;
+                }
+                body {
+                    padding-top: 0 !important;
+                    padding-left: 0 !important;
+                    color: #212529 !important;
+                }
+                section.resume-section {
+                    min-height: auto !important;
+                    padding: 1.25rem 0 !important;
+                    max-width: 100% !important;
+                }
+                .project-block,
+                .cert-item {
+                    break-inside: avoid;
+                }
+                a {
+                    color: #212529 !important;
+                    text-decoration: none !important;
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Robert Gherlan</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Robert Gherlan" />
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Summary</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#presentations">Presentations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
-            <!-- About-->
+            <!-- Summary / About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Robert
                         <span class="text-primary">Gherlan</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        Full Remote Only · Craiova · Romania ·
-                        <a href="mailto:robertgherlan@gmail.com">robertgherlan@gmail.com</a>
+                    <div class="subheading mb-3">
+                        Senior Software Engineer &middot; Data Engineer &middot; Software Architect
                     </div>
-                    <p class="lead mb-5">
-                        Senior Software Engineer <i class="fa-solid fa-grip-lines-vertical"></i> Backend Engineer <i class="fa-solid fa-grip-lines-vertical"></i> Cloud Engineer <i class="fa-solid fa-grip-lines-vertical"></i> Contractor <i class="fa-solid fa-grip-lines-vertical"></i> Frelancer <i class="fa-solid fa-grip-lines-vertical"></i> Java <i class="fa-solid fa-grip-lines-vertical"></i> Golang
-                        <br/>
-                        Having 8+ years of experience focused on delivering efficient, maintainable, secure, reliable, and high-quality solutions.
+                    <div class="contact-meta mb-4">
+                        <span><i class="fas fa-location-dot" aria-hidden="true"></i>Craiova, Romania</span>
+                        <span>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+40736977742">(+40) 736-977-742</a>
+                        </span>
+                        <span>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:robertgherlan@gmail.com">robertgherlan@gmail.com</a>
+                        </span>
+                    </div>
+                    <p class="lead mb-4">
+                        Senior Software &amp; Data Engineer with 11+ years of experience in software engineering, data engineering,
+                        cloud architecture, and system integration on Google Cloud and AWS. Designed and implemented data pipelines,
+                        data systems, monoliths, microservices, and API platforms that reduced technical debt and scaled with business needs.
                     </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/robert-gherlan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/robert-gherlan" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://github.com/robertgherlan" target="_blank"><i class="fab fa-github"></i></a>
+                    <ul class="summary-highlights mb-5">
+                        <li>
+                            Proactive Senior Software Engineer and Tech Lead adept at taking high-level product vision from discovery
+                            to deployment. Combines strong independent problem-solving skills with a collaborative approach to drive
+                            architecture, mentor teams, deliver robust software and build robust data systems.
+                        </li>
+                        <li>
+                            Drove end-to-end technical ownership across the entire software development lifecycle, from requirement
+                            analysis and system architecture to automated testing, CI/CD pipelines, and cloud monitoring on AWS and
+                            Google Cloud Platform.
+                        </li>
+                        <li>
+                            Elevated code quality and system reliability by building unit, integration, and performance test suites,
+                            leading peer code reviews, refactoring legacy codebases for speed and maintainability, and authoring
+                            comprehensive system design documentation.
+                        </li>
+                        <li>
+                            Adaptable engineer with a growth mindset, quick to adopt new tools, frameworks, and domain challenges to
+                            drive project success.
+                        </li>
+                        <li>
+                            Dedicated to continuous learning, regularly completing advanced technical training and holding top-tier
+                            cloud certifications.
+                        </li>
+                        <li>
+                            Fostered a culture of knowledge sharing and technical mentorship, ensuring team alignment on architecture,
+                            project goals, and execution standards.
+                        </li>
+                    </ul>
+                    <div class="action-row no-print">
+                        <div class="social-icons">
+                            <a
+                                class="social-icon"
+                                href="https://www.linkedin.com/in/robert-gherlan"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn profile"
+                                title="LinkedIn"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a
+                                class="social-icon"
+                                href="https://github.com/robert-gherlan"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub profile"
+                                title="GitHub"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a
+                                class="social-icon"
+                                href="mailto:robertgherlan@gmail.com"
+                                aria-label="Send email to Robert Gherlan"
+                                title="Email"
+                            >
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <button type="button" class="btn-print-resume" onclick="window.print()">
+                            <i class="fas fa-print" aria-hidden="true"></i>
+                            Print / Save PDF
+                        </button>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Experience-->
+
+            <!-- Work Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Java Software Engineer</h3>
-                            <div class="subheading mb-3">rinf.tech</div>
-                            <p>
-                                To be written
-                            </p>
+                    <h2 class="mb-5">Work Experience</h2>
+
+                    <!-- rinf.tech -->
+                    <article class="role-entry">
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Senior Software Engineer / Data Architect</h3>
+                                <div class="subheading mb-0">rinf.tech</div>
+                            </div>
+                            <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                                <div class="text-primary fw-bold">Feb. 2022 &ndash; Present</div>
+                                <div class="role-location">Remote</div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2022 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Java Software Engineer</h3>
-                            <div class="subheading mb-3">R Systems</div>
-                            <p>
-                                To be written
-                            </p>    
+
+                        <div class="project-block">
+                            <h4 class="project-title">Social Impact Reporting Tool</h4>
+                            <ul class="project-list">
+                                <li>Designed the high-level product architecture, enabling faster releases, and reduced manual work.</li>
+                                <li>
+                                    Implemented role-based access control (RBAC) for the data product following least-privilege principles,
+                                    applying dynamic data masking along with row and column-level security to safeguard PII.
+                                </li>
+                                <li>
+                                    Introduced a validation layer based on KPI definitions, improving data quality and reducing errors,
+                                    incidents and rework by 90%.
+                                </li>
+                                <li>
+                                    Implemented end-to-end data governance in GCP using BigQuery, Dataform and Knowledge Catalog,
+                                    enforcing automated data quality assertions, data security access, and version-controlled
+                                    metadata/lineage across data pipelines.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">BigQuery</span>
+                                <span class="tech-badge">GCP</span>
+                                <span class="tech-badge">Terraform</span>
+                                <span class="tech-badge">GitHub Actions</span>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2021 - February 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Java Engineer</h3>
-                            <div class="subheading mb-3">Museglobal SA</div>
-                            <p>
-                                To be written
-                            </p>    
+
+                        <div class="project-block">
+                            <h4 class="project-title">Sustainability Product</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Authored the high-level and low-level architecture and led the migration of the enterprise Data
+                                    Warehouse from Cloud SQL to BigQuery, reducing infrastructure costs, boosting query performance,
+                                    strengthening security, and streamlining analyst access with end-to-end lineage via Dataform and
+                                    Knowledge Catalog.
+                                </li>
+                                <li>
+                                    Delivered domain-owned data products aligned with Data Mesh principles, improving data discoverability
+                                    and self-serve consumption by migrating static Confluence agreements to version-controlled data
+                                    contracts in a centralized repository.
+                                </li>
+                                <li>
+                                    Built automated data quality checks and robust error handling across all ETL/ELT pipelines, cutting
+                                    failure rates by 90% and preventing downstream reporting inaccuracies.
+                                </li>
+                                <li>
+                                    Reduced web application latency by 90% through data model re-architecture and usage-driven index
+                                    optimization, boosting overall system responsiveness.
+                                </li>
+                                <li>
+                                    Consolidated tens of legacy Cloud Functions into a single, configuration-driven Cloud Run service,
+                                    cutting deployment overhead by 80% and reducing new data ingestion endpoint onboarding from days to
+                                    minutes.
+                                </li>
+                                <li>
+                                    Engineered template-driven data pipelines on Google Managed Airflow (Cloud Composer) with custom
+                                    operators and YAML-based configurations, accelerating pipeline delivery and cutting development time,
+                                    failures, and manual effort by 95%.
+                                </li>
+                                <li>
+                                    Drove cloud cost optimization across enterprise data infrastructure by implementing FinOps best
+                                    practices, rightsizing resources, and keeping operational spend strictly within budget.
+                                </li>
+                                <li>
+                                    Migrated a legacy data-modeling application into isolated Dev and Prod GCP environments using
+                                    Terraform and GitHub Actions, enforcing environment-level governance, independent CI/CD builds, and
+                                    zero cross-environment artifact copying.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">BigQuery</span>
+                                <span class="tech-badge">Dataform</span>
+                                <span class="tech-badge">Terraform</span>
+                                <span class="tech-badge">GitHub Actions</span>
+                                <span class="tech-badge">GCP</span>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2020 - October 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Java Engineer</h3>
-                            <div class="subheading mb-3">Museglobal SA</div>
-                            <p>
-                                To be written
-                            </p>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Sales Data Product</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Re-architected legacy Python VM workloads into event-driven Google Cloud Functions, reducing
+                                    infrastructure operational costs by 80% while improving system scalability and performance.
+                                </li>
+                                <li>
+                                    Architected a high-throughput Google Cloud Dataflow pipeline processing 200M+ daily sales events,
+                                    cutting end-to-end latency by 30% and accelerating downstream analytics and reporting.
+                                </li>
+                                <li>
+                                    Automated GCP data infrastructure provisioning using Terraform and custom Python health-check scripts,
+                                    integrating CI/CD pipelines to eliminate manual overhead and maintain 99.9% pipeline uptime.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Java 17</span>
+                                <span class="tech-badge">Spring Boot</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">Apache Beam</span>
+                                <span class="tech-badge">Dataflow</span>
+                                <span class="tech-badge">Pub/Sub</span>
+                                <span class="tech-badge">Cloud Scheduler</span>
+                                <span class="tech-badge">Cloud Functions</span>
+                                <span class="tech-badge">Cloud Storage</span>
+                                <span class="tech-badge">BigQuery</span>
+                                <span class="tech-badge">Dataform</span>
+                                <span class="tech-badge">Terraform</span>
+                                <span class="tech-badge">GitHub Actions</span>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2015 - May 2020</span></div>
-                    </div>
+                    </article>
+
+                    <!-- R Systems -->
+                    <article class="role-entry">
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Senior Java Software Engineer</h3>
+                                <div class="subheading mb-0">R Systems</div>
+                            </div>
+                            <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                                <div class="text-primary fw-bold">May 2021 &ndash; Feb. 2022</div>
+                                <div class="role-location">Remote</div>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Telecom Management Product</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Spearheaded the modernization of a UK telecom client&rsquo;s legacy system by re-architecting their
+                                    monolithic product into a scalable service-oriented architecture, directly enabling independent
+                                    service scaling and faster release cycles.
+                                </li>
+                                <li>
+                                    Engineered highly reliable third-party integrations by building fault-tolerant REST and message-queue
+                                    connectors equipped with robust retry logic and dead-letter queue (DLQ) handling to prevent data loss.
+                                </li>
+                                <li>Implemented the health check endpoints for this product, which tested the availability of external services.</li>
+                                <li>
+                                    Modernized the system architecture by replacing anti-patterns (such as using a database as a queue)
+                                    with robust message-queue solutions, significantly improving scalability and data consistency.
+                                </li>
+                                <li>
+                                    Elevated system fault tolerance and resilience by integrating MicroProfile Fault Tolerance,
+                                    implementing robust circuit breakers, retries, and fallbacks to prevent cascading failures.
+                                </li>
+                                <li>
+                                    Raised code coverage to 80% by writing unit and integration tests for core business logic, reducing
+                                    production defects by 90% and enabling safer releases.
+                                </li>
+                                <li>
+                                    Designed and implemented scalable RESTful API endpoints, seamlessly translating evolving business
+                                    requirements into robust backend features.
+                                </li>
+                                <li>
+                                    Maintained and evolved internal shared libraries consumed across multiple engineering squads, driving
+                                    code reuse, standardization, and stability for distributed products.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Java 11</span>
+                                <span class="tech-badge">Quarkus 2</span>
+                                <span class="tech-badge">CouchDB</span>
+                                <span class="tech-badge">RabbitMQ</span>
+                                <span class="tech-badge">JUnit 5</span>
+                                <span class="tech-badge">Mockito</span>
+                                <span class="tech-badge">MockServer</span>
+                                <span class="tech-badge">REST Assured</span>
+                                <span class="tech-badge">MapStruct</span>
+                                <span class="tech-badge">Maven</span>
+                                <span class="tech-badge">SonarQube</span>
+                                <span class="tech-badge">Bitbucket Pipelines</span>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Audio Video Translation Product (MVP)</h4>
+                            <ul class="project-list">
+                                <li>Built an MVP that transcribes audio and video files into text using Azure Cognitive Services.</li>
+                                <li>
+                                    Integrated the product with other services to form an AI platform covering OCR and text, audio, and
+                                    video processing.
+                                </li>
+                                <li>Built a reliable, secure, and scalable web application with an extensible, modular design.</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Spring Boot 2</span>
+                                <span class="tech-badge">Azure Cognitive Services</span>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Product Recommendation System</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Re-engineered the product recommendation engine for a Romanian e-commerce toy retailer by combining
+                                    real-time user activity with Azure AI recommendations, reducing response latency and delivering more
+                                    relevant suggestions.
+                                </li>
+                                <li>
+                                    Cut API response time by 98% (1 s to 20 ms) by migrating from CSV file reads to an indexed MySQL
+                                    database, improving the experience for thousands of users.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Spring Boot 2</span>
+                                <span class="tech-badge">Spring Data JPA</span>
+                                <span class="tech-badge">Azure Database for MySQL</span>
+                                <span class="tech-badge">Azure App Service</span>
+                                <span class="tech-badge">GitLab CI/CD</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MuseGlobal S.A - Senior -->
+                    <article class="role-entry">
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Senior Java Software Engineer</h3>
+                                <div class="subheading mb-0">MuseGlobal S.A</div>
+                            </div>
+                            <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                                <div class="text-primary fw-bold">May 2020 &ndash; Oct. 2021</div>
+                                <div class="role-location">Craiova, Romania</div>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Muse Knowledge Harvest</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Collaborated with 3 engineers to design an end-to-end product architecture, establishing scalable
+                                    service boundaries, data flows, and external integration points.
+                                </li>
+                                <li>
+                                    Built and delivered a functional POC in 4 weeks with Spring Cloud Data Flow, Apache Camel, and MongoDB,
+                                    proving technical feasibility and serving as the blueprint for the production system.
+                                </li>
+                                <li>
+                                    Deployed and configured Sonatype Nexus Repository on AWS EC2 as a centralized artifact repository,
+                                    accelerating CI/CD build times and enforcing consistent dependency management across engineering teams.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Spring Boot 2</span>
+                                <span class="tech-badge">Spring Batch</span>
+                                <span class="tech-badge">Spring Cloud Task</span>
+                                <span class="tech-badge">Spring Cloud Data Flow</span>
+                                <span class="tech-badge">Apache Camel</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Apache Solr</span>
+                                <span class="tech-badge">JUnit</span>
+                                <span class="tech-badge">TestContainers</span>
+                                <span class="tech-badge">GitLab</span>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Muse Identity Manager</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Delivered a centralised identity and access management (IAM) service for thousands of users, supporting
+                                    OAuth2, SAML, OpenID Connect, and HMAC, enabling single sign-on across hundreds of applications.
+                                </li>
+                                <li>
+                                    Supported smooth client rollouts by handling product installations and migrations alongside ongoing
+                                    feature development and bug fixing.
+                                </li>
+                                <li>
+                                    Designed and executed comprehensive unit and integration test suites, maintaining an 85% code coverage
+                                    threshold to guarantee application reliability and regression resistance.
+                                </li>
+                                <li>
+                                    Containerized application workloads using Docker and deployed embedded Apache Tomcat servlet containers
+                                    to streamline product packaging, distribution, and runtime consistency.
+                                </li>
+                                <li>
+                                    Integrated secure multi-gateway payment processing (Stripe, Paystack, and Verifone) into the user
+                                    registration flow, expanding global checkout capabilities and streamlining user onboarding.
+                                </li>
+                                <li>
+                                    Authored comprehensive product and technical documentation, establishing clear API specs, system
+                                    architecture guides, and deployment manuals for engineering teams and external partners.
+                                </li>
+                                <li>
+                                    Leveraged Docker and VirtualBox to provision isolated Linux environments for rigorous cross-platform
+                                    testing and compatibility verification.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Spring Web</span>
+                                <span class="tech-badge">Spring Security</span>
+                                <span class="tech-badge">Spring Data</span>
+                                <span class="tech-badge">Spring Web Flow</span>
+                                <span class="tech-badge">Spring Test</span>
+                                <span class="tech-badge">JUnit 5</span>
+                                <span class="tech-badge">Mockito</span>
+                                <span class="tech-badge">Java Server Pages (JSP)</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Bootstrap 3</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Jenkins</span>
+                                <span class="tech-badge">MySQL/MariaDB</span>
+                                <span class="tech-badge">Linux</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MuseGlobal S.A - Java Engineer -->
+                    <article class="role-entry">
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Java Software Engineer</h3>
+                                <div class="subheading mb-0">MuseGlobal S.A</div>
+                            </div>
+                            <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                                <div class="text-primary fw-bold">Dec. 2015 &ndash; May 2020</div>
+                                <div class="role-location">Craiova, Romania</div>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Muse Knowledge Search</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Enabled multilingual search and content access by integrating Microsoft Translator and Google Cloud
+                                    Translation for queries and records in user requested languages.
+                                </li>
+                                <li>
+                                    Engineered an automated language detection workflow using Apache Tika and cloud APIs (Microsoft &amp;
+                                    Google) to filter out pre-translated text, optimizing API usage and cutting translation overhead.
+                                </li>
+                                <li>
+                                    Integrated the Lingo3G clustering engine API to group searched records dynamically, improving result
+                                    organization and navigation.
+                                </li>
+                                <li>
+                                    Expanded system integration capabilities by building custom connectors for HTTPS, WebSocket, and gRPC
+                                    protocols.
+                                </li>
+                                <li>
+                                    Migrated the internal proxy layer from Apache Tomcat&rsquo;s HTTP Connector to the Netty framework,
+                                    optimizing resource efficiency and decoupling heavy container dependencies.
+                                </li>
+                                <li>
+                                    Led the migration of embedded Apache Tomcat dependencies to the latest release, modernizing server
+                                    infrastructure and improving application reliability and security.
+                                </li>
+                                <li>
+                                    Conducted comprehensive stress and load testing to identify system bottlenecks, implementing targeted
+                                    optimizations that significantly enhanced performance and stability.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Java 8</span>
+                                <span class="tech-badge">FreeMarker</span>
+                                <span class="tech-badge">Java Servlets</span>
+                                <span class="tech-badge">JSP</span>
+                                <span class="tech-badge">Apache Tomcat</span>
+                                <span class="tech-badge">eXist-DB</span>
+                                <span class="tech-badge">Apache Tika</span>
+                                <span class="tech-badge">Lingo3G</span>
+                                <span class="tech-badge">Java VisualVM</span>
+                                <span class="tech-badge">Linux</span>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <h4 class="project-title">Muse Knowledge Proxy</h4>
+                            <ul class="project-list">
+                                <li>
+                                    Engineered modular authentication services supporting Learning Tools Interoperability (LTI) and SQL,
+                                    enabling secure, single sign-on (SSO) and custom database access.
+                                </li>
+                                <li>
+                                    Engineered core security features, including Pre-Authentication Rules and a KeyStore Manager, to
+                                    enforce fine-grained access control and secure cryptographic credential management.
+                                </li>
+                                <li>
+                                    Enhanced the IP authentication module by adding support for IP ranges and CIDR notation, enabling
+                                    granular network access control and scalable IP filtering.
+                                </li>
+                                <li>
+                                    Engineered a usage limiting feature powered by a sliding window algorithm to ensure fair API resource
+                                    allocation and protect services against traffic spikes.
+                                </li>
+                                <li>
+                                    Extended the HTTP cookie configuration framework to support advanced security attributes like SameSite,
+                                    Secure and HttpOnly, strengthening application security and session governance.
+                                </li>
+                                <li>
+                                    Built and executed Apache JMeter load testing suites to benchmark server performance, identify
+                                    throughput limits, and validate peak-load scalability.
+                                </li>
+                                <li>
+                                    Developed an Administrator Console using a JSON Patch-inspired approach, streamlining configuration
+                                    management across all configuration files.
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-stack-label">Tech Stack:</span>
+                                <span class="tech-badge">Java 8</span>
+                                <span class="tech-badge">Spring Framework 5</span>
+                                <span class="tech-badge">Spring Web</span>
+                                <span class="tech-badge">Spring Security</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">JMeter</span>
+                                <span class="tech-badge">JUnit</span>
+                                <span class="tech-badge">Linux</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                    <h2 class="mb-4">Skills</h2>
+                    <ul class="list-inline dev-icons mb-4" aria-label="Core technology icons">
+                        <li class="list-inline-item" title="Python"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item" title="Java"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item" title="Google Cloud Platform"><i class="fab fa-google"></i></li>
+                        <li class="list-inline-item" title="Amazon Web Services"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item" title="Microsoft Azure"><i class="fab fa-microsoft"></i></li>
+                        <li class="list-inline-item" title="Docker"><i class="fab fa-docker"></i></li>
+                        <li class="list-inline-item" title="GitHub Actions"><i class="fab fa-github"></i></li>
+                        <li class="list-inline-item" title="Linux"><i class="fab fa-linux"></i></li>
                     </ul>
-                    <div class="subheading mb-3 mt-3">Tech stack that I worked with in the past years:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Java 17, Spring Boot, Quarkus, Micronaut, Hibernate, JPA
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Languages</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Java (8, 11, 17)</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Data Engineering, Analytics &amp; Governance</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">BigQuery</span>
+                            <span class="tech-badge">Dataform</span>
+                            <span class="tech-badge">Knowledge Catalog</span>
+                            <span class="tech-badge">Google Cloud Dataflow</span>
+                            <span class="tech-badge">Apache Beam</span>
+                            <span class="tech-badge">Cloud Composer (Managed Airflow)</span>
+                            <span class="tech-badge">Databricks</span>
+                            <span class="tech-badge">ETL / ELT Pipelines</span>
+                            <span class="tech-badge">Data Mesh &amp; Data Contracts</span>
+                            <span class="tech-badge">Data Quality &amp; Lineage</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Cloud Platforms &amp; Infrastructure</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Google Cloud Platform (GCP)</span>
+                            <span class="tech-badge">Cloud Run</span>
+                            <span class="tech-badge">Cloud Functions</span>
+                            <span class="tech-badge">Cloud Storage</span>
+                            <span class="tech-badge">Cloud Scheduler</span>
+                            <span class="tech-badge">Cloud SQL</span>
+                            <span class="tech-badge">AWS (EC2)</span>
+                            <span class="tech-badge">Azure Cognitive Services &amp; AI</span>
+                            <span class="tech-badge">Azure App Service</span>
+                            <span class="tech-badge">FinOps &amp; Cloud Cost Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Backend &amp; Application Frameworks</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">Spring Framework 5</span>
+                            <span class="tech-badge">Spring Security</span>
+                            <span class="tech-badge">Spring Data JPA</span>
+                            <span class="tech-badge">Spring Batch</span>
+                            <span class="tech-badge">Spring Cloud Data Flow</span>
+                            <span class="tech-badge">Spring Cloud Task</span>
+                            <span class="tech-badge">Spring Web / Web Flow</span>
+                            <span class="tech-badge">Quarkus</span>
+                            <span class="tech-badge">Micronaut</span>
+                            <span class="tech-badge">MicroProfile Fault Tolerance</span>
+                            <span class="tech-badge">Apache Camel</span>
+                            <span class="tech-badge">Netty</span>
+                            <span class="tech-badge">Apache Tomcat</span>
+                            <span class="tech-badge">MapStruct</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Databases, Search &amp; Messaging</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">BigQuery</span>
+                            <span class="tech-badge">MySQL / MariaDB</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">CouchDB</span>
+                            <span class="tech-badge">eXist-DB</span>
+                            <span class="tech-badge">Apache Solr</span>
+                            <span class="tech-badge">Google Cloud Pub/Sub</span>
+                            <span class="tech-badge">Apache Kafka</span>
+                            <span class="tech-badge">RabbitMQ</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">DevOps, CI/CD &amp; Testing</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">GitLab CI/CD</span>
+                            <span class="tech-badge">Bitbucket Pipelines</span>
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Maven</span>
+                            <span class="tech-badge">SonarQube</span>
+                            <span class="tech-badge">Sonatype Nexus</span>
+                            <span class="tech-badge">JUnit 5</span>
+                            <span class="tech-badge">Mockito</span>
+                            <span class="tech-badge">MockServer</span>
+                            <span class="tech-badge">REST Assured</span>
+                            <span class="tech-badge">TestContainers</span>
+                            <span class="tech-badge">Apache JMeter</span>
+                            <span class="tech-badge">Grafana k6</span>
+                            <span class="tech-badge">Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-title">Architecture, Security &amp; Integration</div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">System Architecture</span>
+                            <span class="tech-badge">Microservices &amp; SOA</span>
+                            <span class="tech-badge">Event-Driven Architecture</span>
+                            <span class="tech-badge">RESTful APIs</span>
+                            <span class="tech-badge">gRPC &amp; WebSocket</span>
+                            <span class="tech-badge">RBAC &amp; Dynamic Data Masking</span>
+                            <span class="tech-badge">Row &amp; Column-Level Security</span>
+                            <span class="tech-badge">OAuth2 / SAML / OIDC / LTI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-2">Certifications</h2>
+                    <div class="subheading mb-4">International</div>
+                    <ul class="cert-list mb-0">
+                        <li class="cert-item">
+                            <span class="cert-year">2026</span>
+                            <span class="cert-issuer">Databricks</span>
+                            <a
+                                class="cert-link"
+                                href="https://credentials.databricks.com/5624499f-612b-4bf7-9fcb-f383bb1b5abe"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Databricks Certified Data Engineer Professional
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            SQL, Python(Programming Language), Go(Programming Language)
+                        <li class="cert-item">
+                            <span class="cert-year">2026</span>
+                            <span class="cert-issuer">Databricks</span>
+                            <a
+                                class="cert-link"
+                                href="https://credentials.databricks.com/92c6b689-42cb-4cb2-b7e9-c7008d16eca3"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Databricks Certified Data Engineer Associate
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Software Engineering Principles:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            System Design, Design Patterns, SOLID, KISS, DRY, OOP
+                        <li class="cert-item">
+                            <span class="cert-year">2026</span>
+                            <span class="cert-issuer">Databricks</span>
+                            <a
+                                class="cert-link"
+                                href="https://credentials.databricks.com/c656b3be-1121-490e-a3f3-0d4857de3630"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Databricks Certified Data Analyst Associate
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Software Development Life Cycle (SDLC)
+                        <li class="cert-item">
+                            <span class="cert-year">2023</span>
+                            <span class="cert-issuer">AWS</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.credly.com/badges/6ce6b44e-68ce-48d5-a7a5-a6d6f462f1bb"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                AWS Certified Solutions Architect &ndash; Professional
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            RESTful APIs
+                        <li class="cert-item">
+                            <span class="cert-year">2023</span>
+                            <span class="cert-issuer">Google</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.credly.com/badges/38549dbe-3cd3-4b26-9a23-35ae1ae7f3f7"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Google Cloud Certified Professional Cloud Architect
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Test-driven development (TDD)
+                        <li class="cert-item">
+                            <span class="cert-year">2023</span>
+                            <span class="cert-issuer">Google</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.credly.com/badges/7d6bdee0-a9ff-472e-9816-283686849f39"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Google Cloud Certified Professional Data Engineer
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Cloud Technologies:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Google Cloud Platform(GCP)
+                        <li class="cert-item">
+                            <span class="cert-year">2022</span>
+                            <span class="cert-issuer">CompTIA</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.credly.com/badges/abd036c6-5edb-4757-a430-3440c31c62b9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                CompTIA Security+ ce Certification
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Amazon Web Services(AWS)
+                        <li class="cert-item">
+                            <span class="cert-year">2022</span>
+                            <span class="cert-issuer">AWS</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.credly.com/badges/8d989e06-932a-43b8-b4ff-18c7d1d12e56"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                AWS Certified Solutions Architect &ndash; Associate
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">DevOps:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Continuous Integration/Continuous Delivery (CI/CD)
+                        <li class="cert-item">
+                            <span class="cert-year">2021</span>
+                            <span class="cert-issuer">VMware</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.youracclaim.com/badges/cc408c66-9045-4b1e-8e78-c2961740bfbd"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                VMware Spring Professional 2021
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Docker, Kubernetes, Jenkins, GitHub Actions, Jenkins, Google Cloud Build
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Monitoring/Logging/Operations(Prometheus, Grafana, Zipkin, Google Cloud Monitoring)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Infrastructure-as-Code (IaC) with Terraform
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Workflow Orchestration:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Apache Airflow / Google Cloud Composer
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Databases:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Data Warehouse / Analytics: BigQuery
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            RDBMS: MySQL, PostgreSQL
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            NoSQL: MongoDB, CouchDB, Cloud Firestore
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Messaging Systems:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            RabbitMQ
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Kafka
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Pub/Sub
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Testing Frameworks:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            JUnit
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Spring Boot Test
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            pytest
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            gotest
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mockito
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            RestAssured
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Testcontainers
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Load Testing:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            JMeter, k6
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3 mt-3">Software Architecture:</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Monolith
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Model–view–controller(MVC)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Microservices
+                        <li class="cert-item">
+                            <span class="cert-year">2020</span>
+                            <span class="cert-issuer">Oracle</span>
+                            <a
+                                class="cert-link"
+                                href="https://www.youracclaim.com/badges/9a27ae27-c1a7-46a2-ab48-0d09e3674d6d"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Oracle Certified Professional: Java SE 11 Developer
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- Presentations-->
+            <section class="resume-section" id="presentations">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Presentations</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Technical Talks &amp; Workshops</h3>
+                            <div class="subheading presentation-subtitle mb-2">
+                                Delivered technical presentations to share knowledge and align teams on architecture and technical decisions.
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                            <div class="text-primary fw-bold">2022 &ndash; 2026</div>
+                            <div class="role-location">Romania &middot; Remote</div>
+                        </div>
+                    </div>
+                    <ul class="project-list mt-3 mb-0">
+                        <li>
+                            Conducted and presented a comparative technical analysis of modern Java frameworks (Spring Boot, Quarkus,
+                            Micronaut). The analysis was substantiated with empirical performance benchmarks from Grafana k6 load tests
+                            and showcased integration patterns with Apache Kafka and PostgreSQL to guide future architectural decisions.
+                        </li>
+                        <li>
+                            Shared expertise with peers by authoring and delivering a technical deep-dive on achieving AWS Solution
+                            Architect certification. The presentation covered effective learning strategies, best practices for core
+                            AWS services, and a curated guide to study resources.
+                        </li>
+                        <li>
+                            Designed and delivered a comprehensive 12-hour Data Engineering workshop to accelerate team proficiency in
+                            the Google Cloud Platform (GCP) data ecosystem, covering core services including BigQuery, Cloud Run, Cloud
+                            Scheduler, Cloud Storage, Dataform, and Pub/Sub.
+                        </li>
+                        <li>
+                            Spearheaded cross-functional demo and sync sessions to communicate R&amp;D discoveries and performance
+                            benchmarks, fostering an internal culture of continuous learning and technical alignment.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                      <div class="flex-grow-1">
-                          <h3 class="mb-0">University of Craiova</h3>
-                          <div class="subheading mb-3">Master of Science(MSc)</div>
-                          <div>Computer Science</div>
-                          <p>GPA: 10/10</p>
-                      </div>
-                      <div class="flex-shrink-0"><span class="text-primary">October 2016 - June 2018</span></div>
-                  </div>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Universitatea din Craiova</h3>
+                            <div class="subheading mb-3">Master&rsquo;s Degree, Informatics</div>
+                            <ul class="edu-details">
+                                <li><strong>Specialisation:</strong> Advanced Techniques for Information Processing</li>
+                                <li>
+                                    <strong>Thesis:</strong> Developing Web Applications with Spring MVC 4. Pre-registration of
+                                    candidates for the admission contest.
+                                </li>
+                                <li><strong>Grade:</strong> 10 out of 10</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                            <div class="text-primary fw-bold">Sept. 2016 &ndash; Jun. 2018</div>
+                            <div class="role-location">Craiova, Romania</div>
+                        </div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Craiova</h3>
-                            <div class="subheading mb-3">Bachelor of Science(B.Sc)</div>
-                            <div>Computer Science</div>
-                            <p>GPA: 9.76/10</p>
+                            <h3 class="mb-0">Universitatea din Craiova</h3>
+                            <div class="subheading mb-3">Bachelor&rsquo;s Degree, Informatics</div>
+                            <ul class="edu-details">
+                                <li><strong>Thesis:</strong> Securing applications with Spring Security</li>
+                                <li><strong>Grade:</strong> 9.76 out of 10</li>
+                            </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2013 - June 2016</span></div>
+                        <div class="flex-shrink-0 text-md-end role-meta mt-2 mt-md-0">
+                            <div class="text-primary fw-bold">Sept. 2013 &ndash; Jun. 2016</div>
+                            <div class="role-location">Craiova, Romania</div>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Certifications-->
-            <section class="resume-section" id="certifications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.credential.net/ec1918ac-857c-44ae-8333-15bbee87e298">Google Cloud Certified: Professional Cloud Architect</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.credential.net/4e93ed00-ebb7-4769-b652-bbbe74c468db">Google Cloud Certified: Professional Data Engineer</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.credly.com/badges/93925f64-4788-4bc1-99b1-c23a7290ce73">CompTIA Security+ ce Certification</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.credly.com/badges/8d989e06-932a-43b8-b4ff-18c7d1d12e56">AWS Certified Solutions Architect – Associate</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.youracclaim.com/badges/cc408c66-9045-4b1e-8e78-c2961740bfbd">VMware Spring Professional 2021</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.youracclaim.com/badges/9a27ae27-c1a7-46a2-ab48-0d09e3674d6d">Oracle Certified Professional: Java SE 11 Developer</a>
-                        </li>
-                    </ul>
                 </div>
             </section>
         </div>
