@@ -1,34 +1,94 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+(function () {
+    "use strict";
 
-window.addEventListener('DOMContentLoaded', event => {
+    var STORAGE_KEY = "rg-resume-theme";
+    var root = document.documentElement;
+    var themeBtn = document.getElementById("theme-toggle");
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#sideNav');
-    if (sideNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+    function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        if (themeBtn) {
+            var isDark = theme === "dark";
+            themeBtn.setAttribute("aria-pressed", isDark ? "true" : "false");
+            themeBtn.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+            var label = themeBtn.querySelector(".control-label");
+            if (label) {
+                label.textContent = isDark ? "Light" : "Dark";
             }
-        });
-    });
+        }
+    }
 
-});
+    applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", function () {
+            var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            applyTheme(next);
+            try {
+                localStorage.setItem(STORAGE_KEY, next);
+            } catch (e) {}
+        });
+    }
+
+    var printBtn = document.getElementById("print-resume");
+    if (printBtn) {
+        printBtn.addEventListener("click", function () {
+            window.print();
+        });
+    }
+
+    // Active section indicator using IntersectionObserver
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav-link"));
+    var sections = navLinks
+        .map(function (link) {
+            var href = link.getAttribute("href");
+            return href && href.charAt(0) === "#" ? document.querySelector(href) : null;
+        })
+        .filter(Boolean);
+
+    if ("IntersectionObserver" in window && sections.length) {
+        var setActive = function (id) {
+            navLinks.forEach(function (link) {
+                if (link.getAttribute("href") === "#" + id) {
+                    link.setAttribute("aria-current", "true");
+                } else {
+                    link.removeAttribute("aria-current");
+                }
+            });
+        };
+
+        navLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                var href = link.getAttribute("href");
+                if (href && href.charAt(0) === "#") {
+                    setActive(href.slice(1));
+                }
+            });
+        });
+
+        var observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        setActive(entry.target.id);
+                    }
+                });
+            },
+            { rootMargin: "-18% 0px -58% 0px", threshold: 0 }
+        );
+
+        sections.forEach(function (sec) {
+            observer.observe(sec);
+        });
+
+        window.addEventListener(
+            "scroll",
+            function () {
+                if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 32) {
+                    setActive(sections[sections.length - 1].id);
+                }
+            },
+            { passive: true }
+        );
+    }
+})();
