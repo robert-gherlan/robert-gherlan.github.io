@@ -317,6 +317,15 @@ html[data-theme="dark"] .theme-btn .icon-moon {
     max-width: 44rem;
 }
 
+.masthead-credentials {
+    margin: calc(-1 * var(--space-3)) 0 var(--space-5) 0;
+    max-width: 46rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--color-ink);
+}
+
 .contact-list {
     display: flex;
     flex-wrap: wrap;
@@ -744,7 +753,174 @@ html[data-theme="dark"] .theme-btn .icon-moon {
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-4);
+}
+
+/* ==========================================================================
+   Presentation Page Components (index.html)
+   ========================================================================== */
+
+.header-cta {
+    text-decoration: none;
+    border-color: var(--color-cobalt);
+    color: var(--color-cobalt);
+}
+
+.header-cta:hover {
+    background-color: var(--color-cobalt);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+html[data-theme="dark"] .header-cta:hover {
+    color: #0c111b;
+}
+
+.masthead-pitch {
+    margin: 0 0 var(--space-5) 0;
+    max-width: 44rem;
+    font-size: 1.09375rem;
+    line-height: 1.65;
+    color: var(--color-ink);
+}
+
+.cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: var(--space-5);
+}
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.55rem 1.2rem;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-cobalt);
+    border: 1px solid var(--color-cobalt);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-cobalt-hover);
+    border-color: var(--color-cobalt-hover);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+html[data-theme="dark"] .primary-btn {
+    color: #0c111b;
+    font-weight: 600;
+}
+
+html[data-theme="dark"] .primary-btn:hover {
+    color: #0c111b;
+}
+
+.primary-btn svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+.focus-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.focus-item {
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--color-hairline);
+}
+
+.focus-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.focus-title {
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-bottom: 0.4rem;
+}
+
+.focus-copy {
+    margin: 0;
+    font-size: 0.96875rem;
+    line-height: 1.62;
+    color: var(--color-slate);
+}
+
+.role-summary {
+    margin: 0;
+    font-size: 0.96875rem;
+    line-height: 1.62;
+    color: var(--color-slate);
+}
+
+.section-more-link {
+    display: inline-block;
+    margin-top: var(--space-5);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+}
+
+.section-more-link:hover {
+    text-decoration-color: currentColor;
+}
+
+.resume-callout {
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    background-color: var(--color-sheet);
+    border: 1px solid var(--color-hairline);
+    border-left: 3px solid var(--color-cobalt);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-5);
+}
+
+.callout-body {
+    max-width: 36rem;
+}
+
+.callout-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    color: var(--color-ink);
+    margin-bottom: 0.35rem;
+}
+
+.callout-copy {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.58;
+    color: var(--color-slate);
+}
+
+.callout-actions {
+    flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -826,7 +1002,10 @@ html[data-theme="dark"] .theme-btn .icon-moon {
     .site-header,
     .skip-link,
     .site-footer,
-    .cert-link {
+    .cert-link,
+    .cta-group,
+    .section-more-link,
+    .resume-callout {
         display: none !important;
     }
 

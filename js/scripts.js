@@ -37,8 +37,8 @@
         });
     }
 
-    // Active section indicator using IntersectionObserver
-    var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav-link"));
+    // Active section indicator using IntersectionObserver (in-page anchors only)
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('.site-nav-link[href^="#"]'));
     var sections = navLinks
         .map(function (link) {
             var href = link.getAttribute("href");
