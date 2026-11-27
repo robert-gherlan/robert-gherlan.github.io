@@ -1024,14 +1024,18 @@ html[data-theme="dark"] .primary-btn:hover {
     }
 
     .resume-section {
-        grid-template-columns: 9.5rem 1fr !important;
-        gap: 14pt !important;
-        padding: 12pt 0 !important;
+        display: block !important;
+        padding: 10pt 0 !important;
+    }
+
+    .section-content-col {
+        max-width: 100% !important;
     }
 
     .section-heading {
         position: static !important;
-        font-size: 12pt !important;
+        font-size: 12.5pt !important;
+        margin-bottom: 6pt !important;
     }
 
     .project-item,

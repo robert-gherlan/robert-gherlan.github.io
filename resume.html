@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta
             name="description"
-            content="Robert Gherlan - Senior Software Engineer, Data Engineer, and Software Architect with nearly 11 years of experience on Google Cloud Platform and AWS."
+            content="Robert Gherlan - Senior Data &amp; Software Engineer and Data Architect with nearly 11 years of experience on Google Cloud Platform, AWS, and Databricks."
         />
         <meta name="author" content="Robert Gherlan" />
         <meta name="color-scheme" content="light dark" />
         <meta property="og:title" content="Robert Gherlan - Full Resume" />
         <meta
             property="og:description"
-            content="Nearly 11 years of experience designing and building cloud-native data platforms, distributed systems, and scalable API architectures on GCP and AWS."
+            content="Nearly 11 years of experience designing and building cloud-native data platforms, distributed systems, and scalable API architectures on Google Cloud, AWS, and Databricks."
         />
         <meta property="og:type" content="website" />
         <title>Robert Gherlan - Resume</title>
@@ -54,8 +54,8 @@
                 <nav class="site-nav" aria-label="Resume sections">
                     <a class="site-nav-link" href="index.html">Overview</a>
                     <a class="site-nav-link" href="#about" aria-current="true">Summary</a>
-                    <a class="site-nav-link" href="#experience">Experience</a>
                     <a class="site-nav-link" href="#skills">Skills</a>
+                    <a class="site-nav-link" href="#experience">Experience</a>
                     <a class="site-nav-link" href="#certifications">Certifications</a>
                     <a class="site-nav-link" href="#presentations">Presentations</a>
                     <a class="site-nav-link" href="#education">Education</a>
@@ -107,7 +107,7 @@
             <!-- Masthead -->
             <header class="masthead">
                 <h1 class="masthead-name">Robert Gherlan</h1>
-                <p class="masthead-role">Senior Software Engineer, Data Engineer, and Software Architect</p>
+                <p class="masthead-role">Senior Data &amp; Software Engineer | Data Architect</p>
                 <p class="masthead-credentials">
                     Google Cloud Professional Data Engineer &amp; Cloud Architect | AWS Solutions Architect &ndash; Professional |
                     Databricks Data Engineer Professional
@@ -119,7 +119,7 @@
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        <span>Craiova, Romania (Remote)</span>
+                        <span>Craiova, Romania &middot; Remote (EU / CET)</span>
                     </li>
                     <li class="contact-item tabular">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -157,19 +157,20 @@
 
                 <div class="section-content-col">
                     <p class="summary-lead">
-                        Senior Software &amp; Data Engineer with nearly 11&nbsp;years of experience in software engineering, data engineering,
-                        cloud architecture, and system integration on Google Cloud and AWS. Designed and implemented data pipelines,
-                        data systems, monoliths, microservices, and API platforms that reduced technical debt and scaled with business needs.
+                        Senior Data &amp; Software Engineer with nearly 11&nbsp;years of experience in data engineering, backend
+                        software engineering, cloud architecture, and system integration on Google Cloud and AWS. Designed and
+                        implemented batch and streaming data pipelines, enterprise data warehouses, microservices, and API platforms
+                        that reduced technical debt and scaled with business needs.
                     </p>
 
                     <ul class="editorial-list">
                         <li>
                             Architected Google Cloud data platforms processing 200M+&nbsp;events per day at 99.9% uptime, using
-                            Cloud Dataflow, Google BigQuery, Dataform, and Cloud Composer.
+                            Cloud Dataflow, Apache Beam, Google BigQuery, Dataform, and Cloud Composer.
                         </li>
                         <li>
-                            Led a Cloud SQL to Google BigQuery warehouse migration with Data Mesh data contracts, automated data quality
-                            checks, and end-to-end lineage.
+                            Led a Cloud SQL to Google BigQuery warehouse migration with dimensional modeling, Data Mesh data contracts,
+                            automated data quality checks, and end-to-end lineage via Google Cloud Dataplex (Knowledge Catalog).
                         </li>
                         <li>
                             Cut pipeline delivery effort by 95% and deployment overhead by 80% through template-driven Apache Airflow
@@ -184,477 +185,13 @@
                             code reviews, and shares knowledge through technical workshops and mentoring.
                         </li>
                         <li>
-                            Holds 10 cloud and data certifications across Google Cloud, AWS, and Databricks.
+                            Holds 10 international cloud, data, and security certifications across Google Cloud, AWS, and Databricks.
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- Work Experience -->
-            <section class="resume-section" id="experience" aria-labelledby="heading-experience">
-                <div class="section-heading-col">
-                    <h2 class="section-heading" id="heading-experience">Work Experience</h2>
-                </div>
-
-                <div class="section-content-col">
-                    <div class="experience-list">
-                        <!-- rinf.tech -->
-                        <article class="role-entry">
-                            <div class="role-header">
-                                <div>
-                                    <h3 class="role-title">Senior Software Engineer / Data Architect</h3>
-                                    <div class="role-org">
-                                        <span class="role-company">rinf.tech</span>
-                                        <span class="role-location">Remote</span>
-                                    </div>
-                                </div>
-                                <div class="role-dates">Feb. 2022 &ndash; Present</div>
-                            </div>
-
-                            <div class="project-group">
-                                <div class="project-item">
-                                    <h4 class="project-title">Social Impact Reporting Tool</h4>
-                                    <ul class="project-bullets">
-                                        <li>Designed the high-level product architecture, enabling faster releases and reducing manual work.</li>
-                                        <li>
-                                            Implemented role-based access control (RBAC) for the data product following least-privilege principles,
-                                            applying dynamic data masking along with row and column-level security to safeguard PII.
-                                        </li>
-                                        <li>
-                                            Introduced a validation layer based on KPI definitions, improving data quality and reducing errors,
-                                            incidents and rework by 90%.
-                                        </li>
-                                        <li>
-                                            Implemented end-to-end data governance in GCP using BigQuery, Dataform and Knowledge Catalog,
-                                            enforcing automated data quality assertions, data security access, and version-controlled
-                                            metadata/lineage across data pipelines.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">SQL</span>
-                                        <span class="tech-tag">Google Cloud</span>
-                                        <span class="tech-tag">Google BigQuery</span>
-                                        <span class="tech-tag">Dataform</span>
-                                        <span class="tech-tag">Google Knowledge Catalog</span>
-                                        <span class="tech-tag">Terraform</span>
-                                        <span class="tech-tag">GitHub Actions</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Sustainability Product</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Authored the high-level and low-level architecture and led the migration of the enterprise Data
-                                            Warehouse from Cloud SQL to BigQuery, reducing infrastructure costs, boosting query performance,
-                                            strengthening security, and streamlining analyst access with end-to-end lineage via Dataform and
-                                            Knowledge Catalog.
-                                        </li>
-                                        <li>
-                                            Delivered domain-owned data products aligned with Data Mesh principles, improving data discoverability
-                                            and self-serve consumption by migrating static Confluence agreements to version-controlled data
-                                            contracts in a centralized repository.
-                                        </li>
-                                        <li>
-                                            Built automated data quality checks and robust error handling across all ETL/ELT pipelines, cutting
-                                            failure rates by 90% and preventing downstream reporting inaccuracies.
-                                        </li>
-                                        <li>
-                                            Reduced web application latency by 90% through data model re-architecture and usage-driven index
-                                            optimization, boosting overall system responsiveness.
-                                        </li>
-                                        <li>
-                                            Consolidated dozens of legacy Cloud Functions into a single, configuration-driven Cloud Run service,
-                                            cutting deployment overhead by 80% and reducing new data ingestion endpoint onboarding from days to
-                                            minutes.
-                                        </li>
-                                        <li>
-                                            Engineered template-driven data pipelines on Cloud Composer (managed Apache Airflow) with custom
-                                            operators and YAML-based configurations, accelerating pipeline delivery and cutting development time,
-                                            failures, and manual effort by 95%.
-                                        </li>
-                                        <li>
-                                            Drove cloud cost optimization across enterprise data infrastructure by implementing FinOps best
-                                            practices, rightsizing resources, and keeping operational spend strictly within budget.
-                                        </li>
-                                        <li>
-                                            Migrated a legacy data-modeling application into isolated Dev and Prod GCP environments using
-                                            Terraform and GitHub Actions, enforcing environment-level governance, independent CI/CD builds, and
-                                            zero cross-environment artifact copying.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">SQL</span>
-                                        <span class="tech-tag">Google Cloud</span>
-                                        <span class="tech-tag">Google BigQuery</span>
-                                        <span class="tech-tag">Dataform</span>
-                                        <span class="tech-tag">Cloud Composer (Apache Airflow)</span>
-                                        <span class="tech-tag">Cloud Run</span>
-                                        <span class="tech-tag">Terraform</span>
-                                        <span class="tech-tag">GitHub Actions</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Sales Data Product</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Re-architected legacy Python VM workloads into event-driven Google Cloud Functions, reducing
-                                            infrastructure operational costs by 80% while improving system scalability and performance.
-                                        </li>
-                                        <li>
-                                            Architected a high-throughput Google Cloud Dataflow pipeline processing 200M+ daily sales events,
-                                            cutting end-to-end latency by 30% and accelerating downstream analytics and reporting.
-                                        </li>
-                                        <li>
-                                            Automated GCP data infrastructure provisioning using Terraform and custom Python health-check scripts,
-                                            integrating CI/CD pipelines to eliminate manual overhead and maintain 99.9% pipeline uptime.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Java&nbsp;17</span>
-                                        <span class="tech-tag">Spring Boot</span>
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">SQL</span>
-                                        <span class="tech-tag">Apache Beam</span>
-                                        <span class="tech-tag">Cloud Dataflow</span>
-                                        <span class="tech-tag">Cloud Pub/Sub</span>
-                                        <span class="tech-tag">Cloud Scheduler</span>
-                                        <span class="tech-tag">Cloud Functions</span>
-                                        <span class="tech-tag">Cloud Storage</span>
-                                        <span class="tech-tag">Google BigQuery</span>
-                                        <span class="tech-tag">Dataform</span>
-                                        <span class="tech-tag">Terraform</span>
-                                        <span class="tech-tag">GitHub Actions</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- R Systems -->
-                        <article class="role-entry">
-                            <div class="role-header">
-                                <div>
-                                    <h3 class="role-title">Senior Java Software Engineer</h3>
-                                    <div class="role-org">
-                                        <span class="role-company">R Systems</span>
-                                        <span class="role-location">Remote</span>
-                                    </div>
-                                </div>
-                                <div class="role-dates">May 2021 &ndash; Feb. 2022</div>
-                            </div>
-
-                            <div class="project-group">
-                                <div class="project-item">
-                                    <h4 class="project-title">Telecom Management Product</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Spearheaded the modernization of a UK telecom client&rsquo;s legacy system by re-architecting their
-                                            monolithic product into a scalable service-oriented architecture, directly enabling independent
-                                            service scaling and faster release cycles.
-                                        </li>
-                                        <li>
-                                            Engineered highly reliable third-party integrations by building fault-tolerant REST and message-queue
-                                            connectors equipped with robust retry logic and dead-letter queue (DLQ) handling to prevent data loss.
-                                        </li>
-                                        <li>Built health-check endpoints that continuously verify the availability of external service dependencies.</li>
-                                        <li>
-                                            Modernized the system architecture by replacing anti-patterns (such as using a database as a queue)
-                                            with robust message-queue solutions, significantly improving scalability and data consistency.
-                                        </li>
-                                        <li>
-                                            Elevated system fault tolerance and resilience by integrating MicroProfile Fault Tolerance,
-                                            implementing robust circuit breakers, retries, and fallbacks to prevent cascading failures.
-                                        </li>
-                                        <li>
-                                            Raised code coverage to 80% by writing unit and integration tests for core business logic, reducing
-                                            production defects by 90% and enabling safer releases.
-                                        </li>
-                                        <li>
-                                            Designed and implemented scalable RESTful API endpoints, seamlessly translating evolving business
-                                            requirements into robust backend features.
-                                        </li>
-                                        <li>
-                                            Maintained and evolved internal shared libraries consumed across multiple engineering squads, driving
-                                            code reuse, standardization, and stability for distributed products.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Java&nbsp;11</span>
-                                        <span class="tech-tag">Quarkus&nbsp;2</span>
-                                        <span class="tech-tag">MicroProfile Fault Tolerance</span>
-                                        <span class="tech-tag">Apache CouchDB</span>
-                                        <span class="tech-tag">RabbitMQ</span>
-                                        <span class="tech-tag">JUnit&nbsp;5</span>
-                                        <span class="tech-tag">Mockito</span>
-                                        <span class="tech-tag">MockServer</span>
-                                        <span class="tech-tag">REST Assured</span>
-                                        <span class="tech-tag">MapStruct</span>
-                                        <span class="tech-tag">Apache Maven</span>
-                                        <span class="tech-tag">SonarQube</span>
-                                        <span class="tech-tag">Bitbucket Pipelines</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Audio Video Translation Product (MVP)</h4>
-                                    <ul class="project-bullets">
-                                        <li>Built an MVP that transcribes audio and video files into text using Azure Cognitive Services.</li>
-                                        <li>
-                                            Integrated the product with other services to form an AI platform covering OCR and text, audio, and
-                                            video processing.
-                                        </li>
-                                        <li>Built a reliable, secure, and scalable web application with an extensible, modular design.</li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
-                                        <span class="tech-tag">Azure Cognitive Services</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Product Recommendation System</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Re-engineered the product recommendation engine for a Romanian e-commerce toy retailer by combining
-                                            real-time user activity with Azure AI recommendations, reducing response latency and delivering more
-                                            relevant suggestions.
-                                        </li>
-                                        <li>
-                                            Cut API response time by 98% (1&nbsp;s to 20&nbsp;ms) by migrating from CSV file reads to an indexed
-                                            MySQL database, improving the experience for thousands of users.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
-                                        <span class="tech-tag">Spring Data JPA</span>
-                                        <span class="tech-tag">Azure Database for MySQL</span>
-                                        <span class="tech-tag">Azure App Service</span>
-                                        <span class="tech-tag">GitLab CI/CD</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- MuseGlobal S.A - Senior -->
-                        <article class="role-entry">
-                            <div class="role-header">
-                                <div>
-                                    <h3 class="role-title">Senior Java Software Engineer</h3>
-                                    <div class="role-org">
-                                        <span class="role-company">MuseGlobal S.A.</span>
-                                        <span class="role-location">Craiova, Romania</span>
-                                    </div>
-                                </div>
-                                <div class="role-dates">May 2020 &ndash; Oct. 2021</div>
-                            </div>
-
-                            <div class="project-group">
-                                <div class="project-item">
-                                    <h4 class="project-title">Muse Knowledge Harvest</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Collaborated with 3&nbsp;engineers to design an end-to-end product architecture, establishing scalable
-                                            service boundaries, data flows, and external integration points.
-                                        </li>
-                                        <li>
-                                            Built and delivered a functional POC in 4&nbsp;weeks with Spring Cloud Data Flow, Apache Camel, and
-                                            MongoDB, proving technical feasibility and serving as the blueprint for the production system.
-                                        </li>
-                                        <li>
-                                            Deployed and configured Sonatype Nexus Repository on AWS EC2 as a centralized artifact repository,
-                                            accelerating CI/CD build times and enforcing consistent dependency management across engineering teams.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
-                                        <span class="tech-tag">Spring Batch</span>
-                                        <span class="tech-tag">Spring Cloud Task</span>
-                                        <span class="tech-tag">Spring Cloud Data Flow</span>
-                                        <span class="tech-tag">Apache Camel</span>
-                                        <span class="tech-tag">MySQL</span>
-                                        <span class="tech-tag">MongoDB</span>
-                                        <span class="tech-tag">Apache Solr</span>
-                                        <span class="tech-tag">Amazon EC2</span>
-                                        <span class="tech-tag">Sonatype Nexus</span>
-                                        <span class="tech-tag">JUnit</span>
-                                        <span class="tech-tag">Testcontainers</span>
-                                        <span class="tech-tag">GitLab CI/CD</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Muse Identity Manager</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Delivered a centralized identity and access management (IAM) service for thousands of users, supporting
-                                            OAuth2, SAML, OpenID Connect, and HMAC, enabling single sign-on across hundreds of applications.
-                                        </li>
-                                        <li>
-                                            Delivered product installations and client migrations for smooth rollouts, in parallel with ongoing
-                                            feature development and bug fixing.
-                                        </li>
-                                        <li>
-                                            Designed and executed comprehensive unit and integration test suites, maintaining an 85% code coverage
-                                            threshold to guarantee application reliability and regression resistance.
-                                        </li>
-                                        <li>
-                                            Containerized application workloads using Docker and deployed embedded Apache Tomcat servlet containers
-                                            to streamline product packaging, distribution, and runtime consistency.
-                                        </li>
-                                        <li>
-                                            Integrated secure multi-gateway payment processing (Stripe, Paystack, and Verifone) into the user
-                                            registration flow, expanding global checkout capabilities and streamlining user onboarding.
-                                        </li>
-                                        <li>
-                                            Authored comprehensive product and technical documentation, establishing clear API specs, system
-                                            architecture guides, and deployment manuals for engineering teams and external partners.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Spring Web</span>
-                                        <span class="tech-tag">Spring Security</span>
-                                        <span class="tech-tag">Spring Data</span>
-                                        <span class="tech-tag">Spring Web Flow</span>
-                                        <span class="tech-tag">Spring Test</span>
-                                        <span class="tech-tag">JUnit&nbsp;5</span>
-                                        <span class="tech-tag">Mockito</span>
-                                        <span class="tech-tag">JavaServer Pages (JSP)</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                        <span class="tech-tag">Bootstrap&nbsp;3</span>
-                                        <span class="tech-tag">Docker</span>
-                                        <span class="tech-tag">Jenkins</span>
-                                        <span class="tech-tag">MySQL</span>
-                                        <span class="tech-tag">MariaDB</span>
-                                        <span class="tech-tag">Linux</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- MuseGlobal S.A - Java Software Engineer -->
-                        <article class="role-entry">
-                            <div class="role-header">
-                                <div>
-                                    <h3 class="role-title">Java Software Engineer</h3>
-                                    <div class="role-org">
-                                        <span class="role-company">MuseGlobal S.A.</span>
-                                        <span class="role-location">Craiova, Romania</span>
-                                    </div>
-                                </div>
-                                <div class="role-dates">Dec. 2015 &ndash; May 2020</div>
-                            </div>
-
-                            <div class="project-group">
-                                <div class="project-item">
-                                    <h4 class="project-title">Muse Knowledge Search</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Enabled multilingual search and content access by integrating Microsoft Translator and Google Cloud
-                                            Translation for queries and records in user-requested languages.
-                                        </li>
-                                        <li>
-                                            Engineered an automated language detection workflow using Apache Tika and cloud APIs (Microsoft &amp;
-                                            Google) to filter out pre-translated text, optimizing API usage and cutting translation overhead.
-                                        </li>
-                                        <li>
-                                            Integrated the Lingo3G clustering engine API to group searched records dynamically, improving result
-                                            organization and navigation.
-                                        </li>
-                                        <li>
-                                            Expanded system integration capabilities by building custom connectors for HTTPS, WebSocket, and gRPC
-                                            protocols.
-                                        </li>
-                                        <li>
-                                            Migrated the internal proxy layer from Apache Tomcat&rsquo;s HTTP Connector to the Netty framework,
-                                            optimizing resource efficiency and decoupling heavy container dependencies.
-                                        </li>
-                                        <li>
-                                            Led the migration of embedded Apache Tomcat dependencies to the latest release, modernizing server
-                                            infrastructure and improving application reliability and security.
-                                        </li>
-                                        <li>
-                                            Conducted comprehensive stress and load testing to identify system bottlenecks, implementing targeted
-                                            optimizations that significantly enhanced performance and stability.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Java&nbsp;8</span>
-                                        <span class="tech-tag">Apache FreeMarker</span>
-                                        <span class="tech-tag">Java Servlet API</span>
-                                        <span class="tech-tag">JavaServer Pages (JSP)</span>
-                                        <span class="tech-tag">Netty</span>
-                                        <span class="tech-tag">Apache Tomcat</span>
-                                        <span class="tech-tag">eXist-db</span>
-                                        <span class="tech-tag">Apache Tika</span>
-                                        <span class="tech-tag">Lingo3G</span>
-                                        <span class="tech-tag">Java VisualVM</span>
-                                        <span class="tech-tag">Linux</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item">
-                                    <h4 class="project-title">Muse Knowledge Proxy</h4>
-                                    <ul class="project-bullets">
-                                        <li>
-                                            Engineered modular authentication services supporting Learning Tools Interoperability (LTI) and SQL,
-                                            enabling secure, single sign-on (SSO) and custom database access.
-                                        </li>
-                                        <li>
-                                            Built core security features, including Pre-Authentication Rules and a KeyStore Manager, to
-                                            enforce fine-grained access control and secure cryptographic credential management.
-                                        </li>
-                                        <li>
-                                            Enhanced the IP authentication module by adding support for IP ranges and CIDR notation, enabling
-                                            granular network access control and scalable IP filtering.
-                                        </li>
-                                        <li>
-                                            Implemented a usage-limiting feature powered by a sliding window algorithm to ensure fair API resource
-                                            allocation and protect services against traffic spikes.
-                                        </li>
-                                        <li>
-                                            Extended the HTTP cookie configuration framework to support advanced security attributes like SameSite,
-                                            Secure and HttpOnly, strengthening application security and session governance.
-                                        </li>
-                                        <li>
-                                            Built and executed Apache JMeter load testing suites to benchmark server performance, identify
-                                            throughput limits, and validate peak-load scalability.
-                                        </li>
-                                        <li>
-                                            Developed an Administrator Console using a JSON Patch-inspired approach, streamlining edits
-                                            across all configuration files.
-                                        </li>
-                                    </ul>
-                                    <div class="tech-line">
-                                        <span class="tech-line-label">Tech Stack:</span>
-                                        <span class="tech-tag">Java&nbsp;8</span>
-                                        <span class="tech-tag">Spring Framework&nbsp;5</span>
-                                        <span class="tech-tag">Spring Web</span>
-                                        <span class="tech-tag">Spring Security</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                        <span class="tech-tag">Apache JMeter</span>
-                                        <span class="tech-tag">JUnit</span>
-                                        <span class="tech-tag">Linux</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills -->
+            <!-- Skills (Placed immediately after Summary for ATS & Recruiter screening) -->
             <section class="resume-section" id="skills" aria-labelledby="heading-skills">
                 <div class="section-heading-col">
                     <h2 class="section-heading" id="heading-skills">Skills</h2>
@@ -663,28 +200,26 @@
                 <div class="section-content-col">
                     <dl class="skills-list">
                         <div class="skill-row">
-                            <dt class="skill-term">Programming Languages</dt>
-                            <dd class="skill-values">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Java (8, 11, 17)</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </dd>
-                        </div>
-
-                        <div class="skill-row">
                             <dt class="skill-term">Data Engineering &amp; Governance</dt>
                             <dd class="skill-values">
                                 <span class="tech-tag">Google BigQuery</span>
+                                <span class="tech-tag">Databricks</span>
+                                <span class="tech-tag">Apache Spark</span>
+                                <span class="tech-tag">Delta Lake</span>
+                                <span class="tech-tag">DuckDB</span>
                                 <span class="tech-tag">Dataform</span>
                                 <span class="tech-tag">Google Cloud Dataflow</span>
                                 <span class="tech-tag">Apache Beam</span>
                                 <span class="tech-tag">Cloud Composer (Apache Airflow)</span>
-                                <span class="tech-tag">Databricks</span>
-                                <span class="tech-tag">Google Knowledge Catalog</span>
-                                <span class="tech-tag">ETL / ELT Pipelines</span>
+                                <span class="tech-tag">Google Cloud Dataplex (Knowledge Catalog)</span>
+                                <span class="tech-tag">Lakehouse</span>
+                                <span class="tech-tag">Data Warehouse</span>
+                                <span class="tech-tag">Data Lake</span>
                                 <span class="tech-tag">Data Mesh</span>
                                 <span class="tech-tag">Data Contracts</span>
+                                <span class="tech-tag">Dimensional Modeling</span>
+                                <span class="tech-tag">Batch &amp; Streaming Pipelines</span>
+                                <span class="tech-tag">ETL / ELT</span>
                                 <span class="tech-tag">Data Quality &amp; Lineage</span>
                             </dd>
                         </div>
@@ -703,6 +238,16 @@
                                 <span class="tech-tag">Azure App Service</span>
                                 <span class="tech-tag">Azure Cognitive Services</span>
                                 <span class="tech-tag">FinOps &amp; Cost Optimization</span>
+                            </dd>
+                        </div>
+
+                        <div class="skill-row">
+                            <dt class="skill-term">Programming Languages</dt>
+                            <dd class="skill-values">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Java (8, 11, 17)</span>
+                                <span class="tech-tag">JavaScript</span>
                             </dd>
                         </div>
 
@@ -779,14 +324,435 @@
                                 <span class="tech-tag">gRPC</span>
                                 <span class="tech-tag">WebSocket</span>
                                 <span class="tech-tag">Role-Based Access Control (RBAC)</span>
+                                <span class="tech-tag">GDPR &amp; PII Protection</span>
                                 <span class="tech-tag">Dynamic Data Masking</span>
-                                <span class="tech-tag">Row- &amp; Column-Level Security</span>
+                                <span class="tech-tag">Row &amp; Column-Level Security</span>
                                 <span class="tech-tag">OAuth 2.0</span>
                                 <span class="tech-tag">OpenID Connect (OIDC)</span>
                                 <span class="tech-tag">SAML</span>
                             </dd>
                         </div>
+
+                        <div class="skill-row">
+                            <dt class="skill-term">Spoken Languages</dt>
+                            <dd class="skill-values">
+                                <span class="tech-tag">English (Fluent / Professional)</span>
+                                <span class="tech-tag">Romanian (Native)</span>
+                            </dd>
+                        </div>
                     </dl>
+                </div>
+            </section>
+
+            <!-- Work Experience -->
+            <section class="resume-section" id="experience" aria-labelledby="heading-experience">
+                <div class="section-heading-col">
+                    <h2 class="section-heading" id="heading-experience">Work Experience</h2>
+                </div>
+
+                <div class="section-content-col">
+                    <div class="experience-list">
+                        <!-- rinf.tech -->
+                        <article class="role-entry">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">Senior Software Engineer / Data Architect</h3>
+                                    <div class="role-org">
+                                        <span class="role-company">rinf.tech</span>
+                                        <span class="role-location">Remote</span>
+                                    </div>
+                                </div>
+                                <div class="role-dates">Feb. 2022 &ndash; Present</div>
+                            </div>
+
+                            <div class="project-group">
+                                <div class="project-item">
+                                    <h4 class="project-title">Social Impact Reporting Tool</h4>
+                                    <ul class="project-bullets">
+                                        <li>Designed the high-level product architecture, enabling faster releases and reducing manual work.</li>
+                                        <li>
+                                            Implemented role-based access control (RBAC) following least-privilege principles, applying dynamic
+                                            data masking along with row and column-level security to safeguard sensitive PII for GDPR compliance.
+                                        </li>
+                                        <li>
+                                            Introduced a validation layer based on KPI definitions, improving data quality and reducing errors,
+                                            incidents, and rework by 90%.
+                                        </li>
+                                        <li>
+                                            Implemented end-to-end data governance in GCP using Google BigQuery, Dataform, and Google Cloud
+                                            Dataplex (Knowledge Catalog), enforcing automated data quality assertions, security policies, and
+                                            version-controlled metadata/lineage across pipelines.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SQL</span>
+                                        <span class="tech-tag">Google Cloud</span>
+                                        <span class="tech-tag">Google BigQuery</span>
+                                        <span class="tech-tag">Dataform</span>
+                                        <span class="tech-tag">Google Cloud Dataplex (Knowledge Catalog)</span>
+                                        <span class="tech-tag">Terraform</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Sustainability Product</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Authored the high-level and low-level architecture and led the migration of the enterprise Data
+                                            Warehouse from Cloud SQL to Google BigQuery, reducing infrastructure costs, boosting query
+                                            performance, strengthening security, and streamlining analyst access with end-to-end lineage via
+                                            Dataform and Google Cloud Dataplex (Knowledge Catalog).
+                                        </li>
+                                        <li>
+                                            Delivered domain-owned data products aligned with Data Mesh principles, improving data discoverability
+                                            and self-serve consumption by migrating static Confluence agreements to version-controlled data
+                                            contracts in a centralized repository.
+                                        </li>
+                                        <li>
+                                            Built automated data quality checks and robust error handling across all ETL/ELT pipelines, cutting
+                                            failure rates by 90% and preventing downstream reporting inaccuracies.
+                                        </li>
+                                        <li>
+                                            Reduced web application latency by 90% through dimensional data model re-architecture and
+                                            usage-driven index optimization, boosting overall system responsiveness.
+                                        </li>
+                                        <li>
+                                            Consolidated dozens of legacy Cloud Functions into a single, configuration-driven Cloud Run service,
+                                            cutting deployment overhead by 80% and reducing new data ingestion endpoint onboarding from days to
+                                            minutes.
+                                        </li>
+                                        <li>
+                                            Engineered template-driven data pipelines on Cloud Composer (managed Apache Airflow) with custom
+                                            operators and YAML-based configurations, accelerating pipeline delivery and cutting development time,
+                                            failures, and manual effort by 95%.
+                                        </li>
+                                        <li>
+                                            Drove cloud cost optimization across enterprise data infrastructure by implementing FinOps best
+                                            practices, rightsizing resources, and keeping operational spend strictly within budget.
+                                        </li>
+                                        <li>
+                                            Migrated a legacy data-modeling application into isolated Dev and Prod GCP environments using
+                                            Terraform and GitHub Actions, enforcing environment-level governance, independent CI/CD builds, and
+                                            zero cross-environment artifact copying.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SQL</span>
+                                        <span class="tech-tag">Google Cloud</span>
+                                        <span class="tech-tag">Google BigQuery</span>
+                                        <span class="tech-tag">Dataform</span>
+                                        <span class="tech-tag">Cloud Composer (Apache Airflow)</span>
+                                        <span class="tech-tag">Cloud Run</span>
+                                        <span class="tech-tag">Terraform</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Sales Data Product</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Re-architected legacy Python VM workloads into event-driven Google Cloud Functions, reducing
+                                            infrastructure operational costs by 80% while improving system scalability and performance.
+                                        </li>
+                                        <li>
+                                            Architected a high-throughput Google Cloud Dataflow pipeline processing 200M+&nbsp;daily sales events,
+                                            cutting end-to-end latency by 30% and accelerating downstream analytics and reporting.
+                                        </li>
+                                        <li>
+                                            Automated GCP data infrastructure provisioning using Terraform and custom Python health-check scripts,
+                                            integrating CI/CD pipelines to eliminate manual overhead and maintain 99.9% pipeline uptime.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Java&nbsp;17</span>
+                                        <span class="tech-tag">Spring Boot</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SQL</span>
+                                        <span class="tech-tag">Apache Beam</span>
+                                        <span class="tech-tag">Cloud Dataflow</span>
+                                        <span class="tech-tag">Cloud Pub/Sub</span>
+                                        <span class="tech-tag">Cloud Scheduler</span>
+                                        <span class="tech-tag">Cloud Functions</span>
+                                        <span class="tech-tag">Cloud Storage</span>
+                                        <span class="tech-tag">Google BigQuery</span>
+                                        <span class="tech-tag">Dataform</span>
+                                        <span class="tech-tag">Terraform</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- R Systems -->
+                        <article class="role-entry">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">Senior Java Software Engineer</h3>
+                                    <div class="role-org">
+                                        <span class="role-company">R Systems</span>
+                                        <span class="role-location">Remote</span>
+                                    </div>
+                                </div>
+                                <div class="role-dates">May 2021 &ndash; Feb. 2022</div>
+                            </div>
+
+                            <div class="project-group">
+                                <div class="project-item">
+                                    <h4 class="project-title">Telecom Management Product</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Spearheaded the modernization of a UK telecom client&rsquo;s legacy monolith into a scalable
+                                            service-oriented architecture, enabling independent service scaling and faster release cycles.
+                                        </li>
+                                        <li>
+                                            Replaced database-as-a-queue anti-patterns with fault-tolerant RabbitMQ and REST connectors
+                                            featuring retry policies and dead-letter queue (DLQ) handling to prevent data loss and improve
+                                            consistency.
+                                        </li>
+                                        <li>
+                                            Elevated platform resilience by integrating MicroProfile Fault Tolerance (circuit breakers, retries,
+                                            fallbacks) alongside external dependency health-check endpoints to prevent cascading failures.
+                                        </li>
+                                        <li>
+                                            Raised automated unit and integration test coverage to 80% for core business logic, reducing
+                                            production defects by 90% and enabling safer deployments.
+                                        </li>
+                                        <li>
+                                            Designed scalable RESTful APIs and evolved shared internal libraries consumed across multiple
+                                            engineering squads, driving standardization and code reuse across distributed products.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Java&nbsp;11</span>
+                                        <span class="tech-tag">Quarkus&nbsp;2</span>
+                                        <span class="tech-tag">MicroProfile Fault Tolerance</span>
+                                        <span class="tech-tag">Apache CouchDB</span>
+                                        <span class="tech-tag">RabbitMQ</span>
+                                        <span class="tech-tag">JUnit&nbsp;5</span>
+                                        <span class="tech-tag">Mockito</span>
+                                        <span class="tech-tag">MockServer</span>
+                                        <span class="tech-tag">REST Assured</span>
+                                        <span class="tech-tag">MapStruct</span>
+                                        <span class="tech-tag">Apache Maven</span>
+                                        <span class="tech-tag">SonarQube</span>
+                                        <span class="tech-tag">Bitbucket Pipelines</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Audio Video Translation Product (MVP)</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Built a modular, scalable Spring Boot&nbsp;2 web MVP that transcribes audio and video files into
+                                            text using Azure Cognitive Services, integrating into a broader AI platform covering OCR, text,
+                                            audio, and video processing.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
+                                        <span class="tech-tag">Azure Cognitive Services</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Product Recommendation System</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Re-engineered the recommendation engine for a Romanian e-commerce toy retailer by combining
+                                            real-time user activity with Azure AI recommendations to deliver faster, higher-relevance
+                                            suggestions.
+                                        </li>
+                                        <li>
+                                            Cut API response time by 98% (1&nbsp;s to 20&nbsp;ms) by migrating from CSV file reads to an indexed
+                                            MySQL database, improving responsiveness for thousands of users.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
+                                        <span class="tech-tag">Spring Data JPA</span>
+                                        <span class="tech-tag">Azure Database for MySQL</span>
+                                        <span class="tech-tag">Azure App Service</span>
+                                        <span class="tech-tag">GitLab CI/CD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- MuseGlobal S.A. - Senior -->
+                        <article class="role-entry">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">Senior Java Software Engineer</h3>
+                                    <div class="role-org">
+                                        <span class="role-company">MuseGlobal S.A.</span>
+                                        <span class="role-location">Craiova, Romania &middot; Part-time transition May&ndash;Oct. 2021</span>
+                                    </div>
+                                </div>
+                                <div class="role-dates">May 2020 &ndash; Oct. 2021</div>
+                            </div>
+
+                            <div class="project-group">
+                                <div class="project-item">
+                                    <h4 class="project-title">Muse Knowledge Harvest</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Co-designed the end-to-end service architecture with 3&nbsp;engineers and delivered a functional
+                                            production blueprint POC in 4&nbsp;weeks using Spring Cloud Data Flow, Apache Camel, and MongoDB.
+                                        </li>
+                                        <li>
+                                            Deployed and configured Sonatype Nexus Repository on Amazon EC2 as a centralized artifact
+                                            repository, accelerating CI/CD builds and standardizing dependency management across teams.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Spring Boot&nbsp;2</span>
+                                        <span class="tech-tag">Spring Batch</span>
+                                        <span class="tech-tag">Spring Cloud Task</span>
+                                        <span class="tech-tag">Spring Cloud Data Flow</span>
+                                        <span class="tech-tag">Apache Camel</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Apache Solr</span>
+                                        <span class="tech-tag">Amazon EC2</span>
+                                        <span class="tech-tag">Sonatype Nexus</span>
+                                        <span class="tech-tag">JUnit</span>
+                                        <span class="tech-tag">Testcontainers</span>
+                                        <span class="tech-tag">GitLab CI/CD</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Muse Identity Manager</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Delivered a centralized identity and access management (IAM) service for thousands of users,
+                                            supporting OAuth&nbsp;2.0, SAML, OpenID Connect, and HMAC single sign-on across hundreds of
+                                            applications.
+                                        </li>
+                                        <li>
+                                            Integrated secure multi-gateway payment processing (Stripe, Paystack, Verifone) into the user
+                                            registration flow, expanding global checkout capabilities and streamlining onboarding.
+                                        </li>
+                                        <li>
+                                            Maintained an 85% unit and integration test coverage threshold and containerized workloads with
+                                            Docker and embedded Apache Tomcat to ensure regression resistance and consistent distribution.
+                                        </li>
+                                        <li>
+                                            Led client installations and migrations alongside feature delivery, authoring API specifications,
+                                            architecture guides, and deployment manuals for internal teams and external partners.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Spring Web</span>
+                                        <span class="tech-tag">Spring Security</span>
+                                        <span class="tech-tag">Spring Data</span>
+                                        <span class="tech-tag">Spring Web Flow</span>
+                                        <span class="tech-tag">Spring Test</span>
+                                        <span class="tech-tag">JUnit&nbsp;5</span>
+                                        <span class="tech-tag">Mockito</span>
+                                        <span class="tech-tag">JavaServer Pages (JSP)</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap&nbsp;3</span>
+                                        <span class="tech-tag">Docker</span>
+                                        <span class="tech-tag">Jenkins</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">MariaDB</span>
+                                        <span class="tech-tag">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- MuseGlobal S.A. - Java Software Engineer -->
+                        <article class="role-entry">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">Java Software Engineer</h3>
+                                    <div class="role-org">
+                                        <span class="role-company">MuseGlobal S.A.</span>
+                                        <span class="role-location">Craiova, Romania</span>
+                                    </div>
+                                </div>
+                                <div class="role-dates">Dec. 2015 &ndash; May 2020</div>
+                            </div>
+
+                            <div class="project-group">
+                                <div class="project-item">
+                                    <h4 class="project-title">Muse Knowledge Search</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Enabled multilingual search via Microsoft Translator and Google Cloud Translation, engineering an
+                                            Apache Tika language-detection filter that eliminated redundant API calls and cut translation
+                                            overhead.
+                                        </li>
+                                        <li>
+                                            Migrated the internal proxy layer from Apache Tomcat&rsquo;s HTTP Connector to Netty and upgraded
+                                            embedded Tomcat dependencies, decoupling heavy container overhead and improving resource efficiency.
+                                        </li>
+                                        <li>
+                                            Built custom HTTPS, WebSocket, and gRPC connectors, integrated Lingo3G dynamic search-result
+                                            clustering, and executed stress/load testing to resolve server bottlenecks.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Java&nbsp;8</span>
+                                        <span class="tech-tag">Apache FreeMarker</span>
+                                        <span class="tech-tag">Java Servlet API</span>
+                                        <span class="tech-tag">JavaServer Pages (JSP)</span>
+                                        <span class="tech-tag">Netty</span>
+                                        <span class="tech-tag">Apache Tomcat</span>
+                                        <span class="tech-tag">eXist-db</span>
+                                        <span class="tech-tag">Apache Tika</span>
+                                        <span class="tech-tag">Lingo3G</span>
+                                        <span class="tech-tag">Java VisualVM</span>
+                                        <span class="tech-tag">Linux</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4 class="project-title">Muse Knowledge Proxy</h4>
+                                    <ul class="project-bullets">
+                                        <li>
+                                            Engineered modular SSO authentication (LTI, SQL), Pre-Authentication Rules, a cryptographic KeyStore
+                                            Manager, CIDR/IP-range network filtering, and hardened SameSite/Secure/HttpOnly cookie governance.
+                                        </li>
+                                        <li>
+                                            Implemented a sliding-window API rate limiter to protect services against traffic spikes and built
+                                            Apache JMeter load-testing suites to validate throughput limits and peak-load scalability.
+                                        </li>
+                                        <li>
+                                            Developed a JSON Patch-inspired Administrator Console that streamlined configuration edits across
+                                            all service configuration files.
+                                        </li>
+                                    </ul>
+                                    <div class="tech-line">
+                                        <span class="tech-line-label">Tech Stack:</span>
+                                        <span class="tech-tag">Java&nbsp;8</span>
+                                        <span class="tech-tag">Spring Framework&nbsp;5</span>
+                                        <span class="tech-tag">Spring Web</span>
+                                        <span class="tech-tag">Spring Security</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Apache JMeter</span>
+                                        <span class="tech-tag">JUnit</span>
+                                        <span class="tech-tag">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 

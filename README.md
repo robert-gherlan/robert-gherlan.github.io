@@ -5,7 +5,7 @@ Static personal presentation and resume website for **Robert Gherlan** (Senior S
 ## Pages
 
 - **`index.html`** — Presentation landing page highlighting architectural focus areas (*Enterprise Data Platforms & Governance*, *High-Throughput Pipelines & Distributed Backends*, *Multi-Cloud Architecture, IaC & FinOps*), an experience snapshot, top skills, featured certifications, education, and direct links to the full resume.
-- **`resume.html`** — Complete curriculum vitae with detailed project case studies, full technology stacks across all roles, an 8-category skills matrix, 10 verified international certifications, technical presentations & workshops, education, and a print-ready PDF layout.
+- **`resume.html`** — Complete curriculum vitae structured for fast recruiter and ATS scanning (`Summary → Skills → Work Experience`), with detailed project case studies, full technology stacks across all roles, a categorized technical skills matrix, 10 verified international certifications, technical presentations & workshops, education, and a single-column ATS-safe print/PDF layout.
 
 ## Design & Technical Highlights
 
