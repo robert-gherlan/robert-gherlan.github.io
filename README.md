@@ -21,7 +21,8 @@ Static personal presentation and resume website for **Robert Gherlan** (Senior S
 .
 ├── assets/
 │   └── img/
-│       └── favicon.ico
+│       ├── favicon.svg
+│       └── logo.svg
 ├── css/
 │   └── styles.css
 ├── js/

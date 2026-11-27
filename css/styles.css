@@ -174,6 +174,9 @@ a:hover {
 }
 
 .site-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     font-family: var(--font-display);
     font-size: 1.125rem;
     font-weight: 600;
@@ -181,6 +184,13 @@ a:hover {
     color: var(--color-ink);
     text-decoration: none;
     white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.brand-mark {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: block;
     flex-shrink: 0;
 }
 
@@ -949,7 +959,7 @@ html[data-theme="dark"] .primary-btn:hover {
         padding-top: var(--space-5);
     }
 
-    .site-brand {
+    .brand-name {
         display: none;
     }
 
